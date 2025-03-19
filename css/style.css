@@ -27,6 +27,10 @@ button {
 button:hover {
   background-color: #ff4c4c;
 }
+ul{
+  
+  transition-duration: 1s;
+}
 
 li {
   background: white;
