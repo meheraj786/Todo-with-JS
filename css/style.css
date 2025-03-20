@@ -133,6 +133,18 @@ position: relative;
   cursor: pointer;
   position: relative;
 }
+.task-checkbox:hover::after{
+  color: red;
+}
+.task-checkbox::after {
+  content: '✔';
+  color: transparent;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .task-checkbox:checked {
   background-color: var(--dark-orange);
@@ -166,7 +178,7 @@ li {
   color: black;
   width: 100%;
   padding: 5px;
-  padding-right: 64px;
+  padding-right: 68px;
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
@@ -175,22 +187,17 @@ li {
   list-style: none;
 }
 
-button.delete {
-  background-color: #ff4c4c;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin-left: 10px;
-  cursor: pointer;
-}
+
 
 .delete-button{
   position: absolute;
   cursor: pointer;
   color: var(--dark-orange);
   margin: 0;
-  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
   background: transparent;
   border: 1px solid var(--dark-orange);
   right: 5px;
