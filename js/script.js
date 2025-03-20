@@ -20,6 +20,7 @@ addTaskButton.addEventListener("click", function () {
             </button>
         `;
         todoList.appendChild(listItem);
+        listItem.style.backgroundColor="#99b4eb"
         taskInput.value = "";
 
         const checkbox = listItem.querySelector(".task-checkbox");
@@ -27,9 +28,11 @@ addTaskButton.addEventListener("click", function () {
             if (checkbox.checked) {
                 doneList.appendChild(listItem);
                 listItem.style.textDecoration="line-through"
+                listItem.style.backgroundColor="#e4b5b0"
             } else {
                 todoList.appendChild(listItem);
                 listItem.style.textDecoration="none"
+                listItem.style.backgroundColor="#99b4eb"
             }
         });
         const deleteButton = listItem.querySelector(".delete-button");
