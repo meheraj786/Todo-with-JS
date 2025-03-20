@@ -212,6 +212,11 @@ li {
   border: 1px solid var(--dark-orange);
 }
 
+
+@media (max-width: 600px){
+
+}
+
 @keyframes rotation {
   0% {
     background: linear-gradient(0deg, var(--blue), var(--orange));
